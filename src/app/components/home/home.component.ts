@@ -10,12 +10,12 @@ export class HomeComponent implements OnInit {
  // const product = Array<{identifiant: number, name: string, price: number}>;
     id : number;
    Listproducts: any = [
-    new Product(1, 'Gamer 1',3500,"pc1.jpg"),
-    new Product(3, 'Gamer 2',2500, "pc2.jpg"),
-    new Product(2, 'Gamer 3',1500,"pc1.jpg"),
-    new Product(4, 'Pc Gamer 4',3500,"pc1.jpg"),
-    new Product(5, 'PC Gamer 5',4500, "pc2.jpg"),
-    new Product(6, 'PC Gamer 6',2700,"pc1.jpg"),
+    new Product(1, 'Gamer 1',3500,"https://www.wiki.tn/28372-large_mobi_default/pc-gamer-viper-51052.jpg"),
+    new Product(3, 'Gamer 2',2500, "https://www.wiki.tn/28372-large_mobi_default/pc-gamer-viper-51052.jpg"),
+    new Product(2, 'Gamer 3',1500,"https://www.wiki.tn/28372-large_mobi_default/pc-gamer-viper-51052.jpg"),
+    new Product(4, 'Pc Gamer 4',3500,"https://www.wiki.tn/28372-large_mobi_default/pc-gamer-viper-51052.jpg"),
+    new Product(5, 'PC Gamer 5',4500, "https://www.wiki.tn/28372-large_mobi_default/pc-gamer-viper-51052.jpg"),
+    new Product(6, 'PC Gamer 6',2700,"https://www.wiki.tn/28372-large_mobi_default/pc-gamer-viper-51052.jpg"),
     ];
   constructor(private router: Router) { }
  
