@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { Product } from 'src/app/models/product';
 import { Router } from '@angular/router';
+import { APP_BASE_HREF } from '@angular/common';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -17,7 +18,7 @@ export class HomeComponent implements OnInit {
     new Product(5, 'PC Gamer 5',4500, "pc2.jpg"),
     new Product(6, 'PC Gamer 6',2700,"pc1.jpg"),
     ];
-  constructor(private router: Router) { }
+  constructor(private router: Router, @Inject(APP_BASE_HREF) private baseUrl: string) { }
  
   ngOnInit(): void {
   }
